@@ -1,0 +1,448 @@
+@font-face {
+   font-family: NeueMachina;
+   src: url(../fonts/NeueMachina/NeueMachina-Light.otf);
+}
+*{
+   padding: 0px;
+   margin: 0px;
+}
+body{
+   background-color: rgb(20, 20, 20);
+}
+.font_family{
+   font-family: NeueMachina;
+}
+.text_highlight{
+   color: #24cfa6;
+}
+#coding{
+   position: relative;
+   top: 38px;
+}
+#logo{
+   padding-left: 50px;
+   width: 21px;
+   position: relative;
+   top: 45px;
+}
+.links{
+   position: relative;
+   top: 25px;
+   left: 260px;
+   font-size: 16px;
+}
+#callback_button{
+   color: white;
+   margin-right: 20px;
+   font-size: 20px;
+   background-color: transparent;
+   outline: none;
+   border: none;
+}
+a{
+   text-decoration: none;
+   font-size: 20px;
+   margin-right: 30px;
+   color: white;
+}
+#home_anchor{
+   margin-left: 300px;
+}
+#SignIn_button{
+   padding-left: 23px;
+   width: 115px;
+   height: 40px;
+   background-color:#24cfa6;
+   color: black;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   position: relative;
+   left: 270px;
+   top: 20px;
+}
+#siginbutton_anchor{
+   color: black;
+   padding-left: 2px;
+   font-size: 18px;
+}
+#bootcamp_division{
+   width: 85%;
+   height: 600px;
+   position: relative;
+   top: 70px;
+   left: 100px;
+}
+.bootcamp_divisions{
+   width: 50%;
+   height: 95%;
+}
+#bootcamp_text_division{
+   position: absolute;
+   top: 10px;
+   left: 10px;
+}
+#bootcamp_video_division{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+}
+#bootcamp_heading{
+   font-size: 50px;
+   color: white;
+}
+#startson_span{
+   width: 180px;
+   height: 25px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 15px;
+   text-align: center;
+   padding-top: 12px;
+   border-radius: 8px;
+   background-color: rgb(61, 60, 60);
+   color: white;
+   position: absolute;
+   top: 190px;
+}
+#placement_span{
+   width: 200px;
+   height: 30px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 15px;
+   text-align: center;
+   padding-top: 8px;
+   border-radius: 8px;
+   background-color: rgb(61, 60, 60);
+   color: white;
+   position: absolute;
+   top: 190px;
+   left: 210px;
+}
+#bluetick_image{
+   width: 20px;
+   margin-left: 5px;
+}
+#price_heading{
+   position: absolute;
+   top: 250px;
+   color: white;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 27px;
+}
+#gst_span{
+   width: 200px;
+   font-size: 17px;
+   position: absolute;
+   top: 10px;
+   left: 200px;
+}
+#seatsarefull_button{
+   width: 178px;
+   height: 50px;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+   position: absolute;
+   top: 320px;
+   background-color: #24cfa6;
+}
+#seatsarefull_anchor{
+   padding-left: 6px;
+   padding-right: 7px;
+   margin-left: 10px;
+}
+#yt_video{
+   width: 700px;
+   height: 70%;
+   border-radius: 20px;
+}
+#consistency_division{
+   width: 1000px;
+   height: 200px;
+   color: white;
+   position: relative;
+   top: 10px;
+   left: 100px;
+}
+#believe_heading{
+   font-size: 80px;
+}
+#consistency_heading{
+   font-size: 80px;
+}
+#subjects_division{
+   width: 75%;
+   height: 300px;
+   position: relative;
+   top: 70px;
+   left: 100px;
+}
+.subjects_spans{
+   width: 400px;
+   height: 50px;
+   font-size: 50px;
+   color: white;
+   padding: 10px;
+   margin-left: 20px;
+   background-color: rgb(43, 43, 43);
+   border-radius: 100px;
+}
+#main_sticky_division{
+   position: sticky;
+   bottom: 40px;
+}
+#request_sticky_division{
+   width: 520px;
+   height: 60px;
+   background-color: rgba(65, 65, 65, 0.126);
+   backdrop-filter: blur(20px);
+   position: relative;
+   top: 180px;
+   left: 29%; 
+}
+.sticky_button{
+   width: 195px;
+   height: 40px;
+   font-size: 5px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   outline: none;
+   border: none;
+   padding: 5px;
+   border-radius: 5px;
+   background-color: rgba(53, 51, 51, 0.158);
+   margin-top: 10px;
+   margin-left: 10px;
+}
+#courses_button{
+   width: 100px;
+}
+#courses_anchor{
+   padding-left: 9px;
+}
+#request_callback_anchor{
+   padding-left: 5px;
+}
+#buynow_division{
+   width: 165px;
+   background-color: #24cfa6;
+}
+#buynow_anchor{
+   padding-left: 20px;
+}
+#nonstop_division{
+   width: 900px;
+   height: 600px;
+   color: white;
+   font-size: 70px;
+   position: relative;
+   top: 300px;
+   left: 100px;
+}
+#everday_span{
+   font-size: 50px;
+}
+#timing_heading{
+   font-size: 30px;
+   position: absolute;
+   top: 515px;
+}
+#dominate_division{
+   width: 900px;
+   height: 400px;
+   position: relative;
+   top: 500px;
+   left: 100px;
+}
+#dominate_heading{
+   font-size: 200px;
+   color: white;
+}
+#victory_heading{
+   font-size: 80px;
+   color: gray;
+}
+#line1{
+   position: relative;
+   top: 1000px;
+}
+#line2{
+   position: relative;
+   top: 900px;
+}
+.lines{
+   margin: 50px;
+}
+#footer_division{
+   width: 90%;
+   height: 500px;
+   position: relative;
+   top: 1000px;
+   left: 50px;
+}
+#connect_division{
+   width: 280px;
+   height: 500px;
+   padding-left: 20px;
+   padding-top: 120px;
+}
+.socials{
+   width: 20px;
+}
+#company_division{
+   width: 200px;
+   height: 500px;
+   position: absolute;
+   top: 70px;
+   left: 400px;
+}
+#company_heading{
+   margin-bottom: 25px;
+   color: white;
+}
+.company_anchors{
+   text-decoration: none;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 15px;
+}
+#community_division{
+   width: 200px;
+   height: 500px;
+   position: absolute;
+   top: 70px;
+   left: 750px;
+}
+#community_heading{
+   margin-bottom: 25px;
+   color: white;
+}
+.community_anchors{
+   text-decoration: none;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 15px;
+}
+#getintouch_division{
+   width: 200px;
+   height: 500px;
+   position: absolute;
+   top: 70px;
+   left: 1100px; 
+}
+#getintouch_heading{
+   margin-bottom: 25px;
+   color: white;
+}
+.getintouch_anchors{
+   text-decoration: none;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 15px;
+}
+#copyrights_division{
+   width: 300px;
+   height: 80px;
+   position: relative;
+   top: 890px;
+   left: 580px;
+   color: white;
+   font-family:Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+#logo1{
+   width: 38px;
+}
+#connect_social{
+   color: white;
+}
+#twitter{
+   width: 29px;
+   position: relative;
+   left: -13px;
+   top: 5px;
+}
+#request_heading{
+   font-size: 25px;
+   color: white;
+   position: absolute;
+   top: 20px;
+   left: 24%;
+}
+#fillform_heading{
+   color: white;
+   position: absolute;
+   top: 85px;
+   left: 47px;
+}
+#fillform1_heading{
+   color: white;
+   position: absolute;
+   top: 100px;
+   left: 150px;
+}
+#name_inputbox_heading{
+   color: white;
+   position: absolute;
+   top: 140px;
+   left: 30px;
+}
+#name_inputbox{
+   width: 70%;
+   height: 20px;
+   border: none;
+   outline: none;
+   background-color: rgb(43, 43, 43);
+   border-radius: 3px;
+   position: absolute;
+   top: 200px;
+   left: 30px;
+}
+#phone_inputbox_heading{
+   color: white;
+   position: absolute;
+   top: 230px;
+   left: 30px;
+}
+#number_inputbox{
+   width: 70%;
+   height: 20px;
+   background-color: rgb(43, 43, 43);
+   border-radius: 3px;
+   border: none;
+   outline: none;
+   position: absolute;
+   top: 290px;
+   left: 30px;
+}
+#dateTime_inputbox_heading{
+   color: white;
+   position: absolute;
+   top: 320px;
+   left: 30px;
+}
+#dateTime_inputbox{
+   width: 70%;
+   height: 20px;
+   border: none;
+   outline: none;
+   background-color: rgb(43, 43, 43);
+   border-radius: 3px;
+   position: absolute;
+   top: 380px;
+   left: 30px;
+}
+#submit_button{
+   width: 87%;
+   height: 25px;
+   background-color: #24cfa6;
+   position: absolute;
+   top: 90%;
+   left: 27px;
+}
+#callbackrequest_division{
+   width: 400px;
+   height: 500px;
+   background-color: rgba(53, 53, 53, 0.948);
+   position: absolute;
+   top: 180px;
+   left: 35%;
+   display: none;
+   z-index: 999;
+}

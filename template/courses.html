@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="{% static 'course.css' %}">
+    <script src="{% static 'js/courses.js' %}" defer></script>
+</head>
+<body>
+    <nav id="navigation_bar" class="font_family">
+        <img src="{% static 'coding image.png' %}" alt="" id="logo">
+        <a id="coding_school" href="{% url 'website:home' %}">Sheryians coding school</a>
+        <a class="navbar" href="{% url 'website:home' %}" id="home_anchor">Home</a>
+        <a class="navbar" href="#">Courses</a>
+        <a class="navbar" href="{% url 'website:bootcamp' %}">Bootcamp(Kodr)</a>
+        <button class="navbar" id="callback_button" onclick="display()">Request Callback</button>
+        <button type="button" id="SignIn_button"><a href="" id="siginbutton_anchor">Sign In</a></button>
+    </nav>
+    <div id="callbackrequest_division">
+        <h3 id="request_heading">Request a callback</h3>
+        <span id="fillform_heading">Fill the form below to request a call from</span><br>
+        <span id="fillform1_heading">our team.</span>
+        <h2 id="name_inputbox_heading">Name</h2>
+        <input type="text" name="Name" id="name_inputbox" placeholder="Name">
+        <h2 id="phone_inputbox_heading">Phone</h2>
+        <input type="number" name="PhoneNumber" id="number_inputbox" placeholder="Phone">
+        <h2 id="dateTime_inputbox_heading">Select Date and Time</h2>
+        <input type="datetime-local" name="DateTime" id="dateTime_inputbox" placeholder="Name">
+        <button type="submit" id="submit_button">Submit</button>
+    </div>
+    <div id="course_factory_division">
+        <h1 id="course_factory_heading" class="font_family">We're not a <span class="text_highlight">course</span></h1>
+        <h1 id="course_factory_heading" class="text_highlight" class="font_family"><span class="font_family">factory.</span></h1>
+        <br>
+        <h1 id="focus_courses_heading">We focus on courses that really help.</h1>
+    </div>
+    <div id="courses_offered_division">
+        <h1 id="courses_offered_heading" class="font_family">Courses which do work ↓</h1>
+        <div id="top_courses_division">
+            <div id="frontend_division" class="top_courses">
+                <div id="image_division">
+                    <img src="{% static 'image4.webp' %}" alt="" id="frontend_image">
+                </div>
+                <div id="text_body">
+                    <h2 id="heading_course">Three.js Domination</h2>
+                    <span id="three_language_span">HINDI</span><br>
+                    <span class="text_highlight" id="text_discount">Black Friday Sale</span><br>
+                    <span id="cost_span">₹2499</span>
+                    <span id="old_cost_span"><strike>₹3500</strike></span>
+                    <span id="offer_span_java">29% OFF</span>
+                </div>
+                <button id="view_details_button"><a href="" id="view_details_anchor">View Details</a></button>
+            </div>
+            <div id="backend_division" class="top_courses">
+                <div id="image_division">
+                    <img src="{% static 'image3.webp' %}" alt="" id="frontend_image">
+                </div>
+                <div id="text_body">
+                    <h2 id="heading_course">Java & DSA Domination</h2>
+                    <span id="java_language_span">HINGLISH</span><br>
+                    <span class="text_highlight" id="text_discount">Limited Time Discount</span><br>
+                    <span id="cost_span">₹4999</span>
+                    <span id="old_cost_span"><strike>₹9999</strike></span>
+                    <span id="offer_span_java">50% OFF</span>
+                </div>
+                <button id="view_details_button"><a href="" id="view_details_anchor">View Details</a></button>
+            </div>
+            <div id="aptitude_division" class="top_courses">
+                <div id="image_division">
+                    <img src="{% static 'image1.webp' %}" alt="" id="frontend_image">
+                </div>
+                <div id="text_body">
+                    <h2 id="heading_course">Back-End Domination:Create</h2>
+                    <h2 id="second_heading_course">Effective Back-End.</h2>
+                    <span id="language_span">HINDI</span><br>
+                    <span class="text_highlight" id="text_discount">Limited Time Discount</span><br>
+                    <span id="cost_span">₹5999</span>
+                    <span id="old_cost_span"><strike>₹11999</strike></span>
+                    <span id="offer_span">50% OFF</span>
+                </div>
+                <button id="view_details_button"><a href="" id="view_details_anchor">View Details</a></button>
+            </div>
+        </div>
+        <div id="bottom_courses_division">
+            <div id="java_courses_division" class="bottom_courses">
+                <div id="image_division">
+                    <img src="{% static 'image.webp' %}" alt="" id="java_image">
+                </div>
+                <div id="text_body">
+                    <h2 id="heading_course">Front-End Domination:Create</h2>
+                    <h2 id="second_heading_course">Anything with Code</h2>
+                    <span id="language_span">HINDI</span><br>
+                    <span class="text_highlight" id="text_discount">Limited Time Discount</span><br>
+                    <span id="cost_span">₹4999</span>
+                    <span id="old_cost_span"><strike>₹9999</strike></span>
+                    <span id="offer_span">50% OFF</span>
+                </div>
+                <button id="view_details_button"><a href="" id="view_details_anchor">View Details</a></button>
+            </div>
+            <div id="three_courses_division" class="bottom_courses">
+                <div id="image_division">
+                    <img src="{% static 'image2.webp' %}" alt="" id="java_image">
+                </div>
+                <div id="text_body">
+                    <h2 id="heading_course">Aptitude & Reasoning for Campus</h2>
+                    <h2 id="second_heading_course">Placements</h2>
+                    <span id="language_span1">HINGLISH</span><br>
+                    <span class="text_highlight" id="text_discount">Black Friday Sale</span><br>
+                    <span id="cost_span">₹999</span>
+                    <span id="old_cost_span"><strike>₹1500</strike></span>
+                    <span id="offer_span">33% OFF</span>
+                </div>
+                <button id="view_details_button"><a href="" id="view_details_anchor">View Details</a></button>
+            </div>
+        </div>
+    </div>
+    <hr id="line1" class="lines">
+    <div id="footer_division" class="font_family">
+        <div id="connect_division">
+            <img id="logo1" src="{% static 'coding image.png' %}" alt="">
+            <h4 id="connect_social">Let's connect with our socials</h4><br>
+            <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fsheryians_coding_school%2F&is_from_rle"><img src="{% static 'insta.png' %}" alt="" class="socials"></a>
+            <a href="https://in.linkedin.com/company/the-sheryians-coding-school"><img src="{% static 'linkedin.png' %}" alt="" class="socials"></a>
+            <a href="https://discord.com/invite/D23JkFqrgz"><img src="{% static 'discard.png' %}" alt="" class="socials"></a>
+            <a href="https://www.youtube.com/@thesheryianscodingschool"><img src="{% static 'youtube.png' %}" alt="" class="socials"></a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsheryians_"><img src="{% static 'twitter.png' %}" alt="" class="socials" id="twitter1"></a>
+        </div>
+        <div id="company_division">
+            <h3 id="company_heading">COMPANY</h3>
+            <a href="" class="company_anchors" id="about_anchor">About Us</a><br><br>
+            <a href="" class="company_anchors" id="support_anchor">Support</a><br><br>
+            <a href="" class="company_anchors">Privacy Policy</a><br><br>
+            <a href="" class="company_anchors">Terms and Condition</a><br><br>
+            <a href="" class="company_anchors">Pricing and Refund</a><br><br>
+            <a href="" class="company_anchors">Hire From Us</a><br><br>
+            <a href="" class="company_anchors">Bug Bounty</a>
+        </div>
+        <div id="community_division">
+            <h3 id="community_heading">COMMUNITY</h3>
+            <a href="" class="community_anchors">Inertia</a><br><br>
+            <a href="" class="community_anchors">Discord</a>
+        </div>
+        <div id="getintouch_division">
+            <h3 id="getintouch_heading">Get In Touch</h3>
+            <a href="" class="getintouch_anchors">+918109161752,</a><br><br>
+            <a href="" class="getintouch_anchors">+919691778470</a><br><br>
+            <a href="" class="getintouch_anchors">hello@sheryians.com</a><br><br>
+            <a href="" class="getintouch_anchors">
+                23-B, Indrapuri Sector <br>
+                C, Bhopal(MP),462021
+            </a>
+        </div>
+    </div>
+    </div>
+    <hr id="line2" class="lines">
+    <div id="copyrights_division">
+        <h4>Copyright © 2024 Sheryians Pvt. Ltd.</h4>
+        <h4>All Rights Reserved.</h4>
+    </div>
+</body>
+</html>

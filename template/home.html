@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home Page</title>
+</head>
+<body>
+      <div>
+            <a id="coding" href="">Sheryians coding school</a>
+            <link rel="stylesheet" href="{% static 'home.css' %}">
+            <nav id="navbar">
+                  <img src="{% static 'coding image.png' %}" alt="">
+                  <a id="home" class="links" href="{% url 'website:home' %}">Home</a>
+                  <a id="courses" class="links" href="{% url 'website:courses' %}">Courses</a>
+                  <a id="bootcamp" class="links" href="{% url 'website:bootcamp' %}">Bootcamp(kodr)</a>
+                  <button id="callback_button" class="links" onclick="display()">Request Callback</button>
+                  <button id="signin_button"><a id="sign" href="{% url 'website:sign' %}"></a> Sign In</button>
+            </nav>
+            <div id="callbackrequest_division">
+                  <h3 id="request_heading">Request a callback</h3>
+                  <span id="fillform_heading">Fill the form below to request a call from</span><br>
+                  <span id="fillform1_heading">our team.</span>
+                  <h2 id="name_inputbox_heading">Name</h2>
+                  <input type="text" name="Name" id="name_inputbox" placeholder="Name">
+                  <h2 id="phone_inputbox_heading">Phone</h2>
+                  <input type="number" name="PhoneNumber" id="number_inputbox" placeholder="Phone">
+                  <h2 id="dateTime_inputbox_heading">Select Date and Time</h2>
+                  <input type="datetime-local" name="DateTime" id="dateTime_inputbox" placeholder="Name">
+                  <button type="submit" id="submit_button">Submit</button>
+              </div>
+      </div> 
+      <h1 id="first">
+                  We only 
+                  <h1>What We are really </h1>
+                  <h1 id="second1"> at.</h1>
+                  <br>
+      </h1>
+            <p id="first1">Get ready to </p>
+            <br>
+            <p id="second">   with customized courses </p>
+            <br>
+            <p>and leave your mark in the tech </p>
+            <br>
+            <p id="last">industry</p>
+            <br>
+      <button id="check_button">Check Courses-Make an Impact</button>
+            <h1 id="first_footer" class="heading">25k+</h1>
+            <h1 id="first_footer" class="heading">Students taught</h1>
+            <h1 id="second_footer" class="heading">20+</h1>
+            <h1 id="second_footer" class="heading">Instructors</h1>
+            <h1 id="third_footer" class="heading">431k+</h1>
+            <h1 id="third_footer" class="heading">Youtube Subs</h1>
+            <br><br><br><br>
+            <h1 id="fourth_footer">We do Whatever it takes to help you</h1>
+            <h1 id="fifth_footer"></h1>
+      <div id="youtube_container">
+            <iframe id="frame" width="560" height="315" src="https://www.youtube.com/embed/60SRAWmMXyc?si=ddoffRw816_zB3NR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <button id="explore">Explore free learning</button>
+      <br>
+      <h1 id="display">Courses Offered.</h1>
+      <br> 
+      <div id="parent">
+            <img src="{% static 'image.webp' %}" alt="">
+            <div class="child">
+                  <h1 id="child1">
+                        Front-End Domination:
+                        <br>
+                        Create Anything with Code<br>
+                  </h1>
+                  <button id="lang1">HINDI</button><br>
+                  <p id="discount1">Limited Time Discount</p>
+                  <p id="offer1">₹4999</p>
+                  <p id="price1">₹9999</p>
+                  <button id="off_button1">50% OFF</button>
+                  <button id="viewbox1" class="view_box">View Details</button>
+            </div>
+            <div id="parent1">
+                  <!-- <img src="{% static 'image1.webp' %}" alt=""> -->
+                  <div class="child">
+                        <h1 id="child2">
+                              Back-End Domination:
+                              <br>
+                              Create Efficient Back-End.<br>
+                        </h1>
+                        <button id="lang2">HINDI</button><br>
+                        <p id="discount2">Limited Time Discount</p>
+                        <p id="offer2">₹5999</p>
+                        <p id="price2">₹11999</p>
+                        <button id="off_button2">50% OFF</button>
+                        <button class="view_box">View Details</button>
+
+                  </div>
+                  <div id="parent2">
+                        <!-- <img src="{% static 'image2.webp' %}" alt=""> -->
+                        <div class="child">
+                              <h1 id="child3">
+                                    Aptitude & Reasoning for
+                                    <br>
+                                    Campus Placements
+                                    <br>
+                              </h1>
+                              <button id="lang3">HINGLISH</button><br>
+                              <p id="discount3">Limited Time Discount</p>
+                              <p id="offer3">₹999</p>
+                              <p id="price3">₹1500</p>
+                              <button id="off_button3">33% OFF</button>
+                              <button class="view_box">View Details</button>
+
+                        </div>
+                        <div id="parent3">
+                              <!-- <img src="{% static 'image3.webp' %}" alt=""> -->
+                              <div class="child">
+                                    <h1 id="child4">
+                                          Java & DSA Domination
+                                          <br><br>
+                                    </h1>
+                                    <button id="lang4">HINGLISH</button><br>
+                                    <p id="discount4">Limited Time Discount</p>
+                                    <p id="offer4">₹4999</p>
+                                    <p id="price4">₹9999</p>
+                                    <button id="off_button4">50% OFF</button>
+                                    <button class="view_box">View Details</button>
+
+                              </div>
+                              <div id="parent4">
+                                    <img src="{% static 'image3.webp' %}" alt="">
+                                    <div class="child">
+                                          <h1 id="child5">
+                                                Three.js Domination
+                                                <br><br>
+                                          </h1>
+                                          <button id="lang5">HINDI</button><br>
+                                          <p id="discount5">Balck Friday Sale</p>
+                                          <p id="offer5">₹2499</p>
+                                          <p id="price5">₹3500</p>
+                                          <button id="off_button5">29% OFF</button>
+                                          <button id="viewbox1" class="view_box">View Details</button>
+
+                                    </div>
+                                    <div id="companies_division">
+                                          <h1 class="font_family">Top<span id="text_highlight" class="font_family">compaines</span> our students </h1>
+                                          <h1 id="working_heading" class="font_family">working with</h1>
+                                      </div>
+                                      <div id="companies_logos">
+                                          <img class="logos" id="mindtree_logo" src="{% static 'mindtree.webp' %}" alt="">
+                                      </div>
+                                      <button id="explore_courses_button"><a href="{% url 'website:courses' %}" id="explore_courses_anchor">Explore Courses</a></button>
+                                      <br>
+                                      <hr id="line1" class="lines">
+                                      <div id="footer_division" class="font_family">
+                                          <div id="connect_division">
+                                              <img id="logo1" src="{% static 'coding image.png' %}" alt="">
+                                              <h3 id="connect_social">Let's connect with our socials</h3><br>
+                                              <a href="https://www.instagram.com/sheryians_coding_school"><img id="insta" class="socials" src="{% static 'insta.png' %}" alt=""></a>
+                                              <a href="https://in.linkedin.com/company/the-sheryians-coding-school"><img id="linkedin" class="socials" src="{% static 'linkedin.png' %}" alt=""></a>
+                                              <a href="https://discord.com/invite/D23JkFqrgz"><img id="discord" class="socials" src="{% static 'discard.png' %}" alt=""></a>
+                                              <a href="https://www.youtube.com/@thesheryianscodingschool"><img id="youtube" class="socials" src="{% static 'youtube.png' %}" alt=""></a>
+                                              <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsheryians_"><img id="xcom" class="socials" src="{% static 'twitter.png' %}" alt=""></a>
+                                          </div>
+                                          <div id="company_division">
+                                              <h3 id="company_heading">COMPANY</h3>
+                                              <a href="" class="company_anchors" id="about_anchor">About Us</a><br><br>
+                                              <a href="" class="company_anchors" id="support_anchor">Support</a><br><br>
+                                              <a href="" class="company_anchors">Privacy Policy</a><br><br>
+                                              <a href="" class="company_anchors">Pricing and Refund</a><br><br>
+                                              <a href="" class="company_anchors">Terms and <span id="Terms">conditions</span></a><br><br>
+                                              <a href="" class="company_anchors">Hire From Us</a><br><br>
+                                              <a href="" class="company_anchors">Bug Bounty</a><br>
+                                          </div>
+                                          <div id="community_division1">
+                                              <h3 id="community_heading">COMMUNITY</h3>
+                                              <a href="" class="community_anchors">Inertia</a><br><br>
+                                              <a href="" class="community_anchors">Discord</a>
+                                          </div>
+                                          <div id="getintouch_division">
+                                              <h3 id="getintouch_heading">Get In Touch</h3>
+                                              <a href="" class="getintouch_anchors">+918109161752,</a><br><br>
+                                              <a href="" class="getintouch_anchors">+919691778470</a><br><br>
+                                              <a href="" class="getintouch_anchors">hello@sheryians.com</a><br><br>
+                                              <a href="" class="getintouch_anchors">23-B, Indrapuri Sector C,<br><span id="pin">Bhopal(MP),462021</span>
+                                              </a>
+                                          </div>
+                                      </div>
+                                      <hr id="line2" class="lines">
+                                      <div id="copyrights_division">
+                                          <h6>Copyright © 2024 Sheryians Pvt. Ltd.</h6>
+                                          <h6>All Rights Reserved.</h6>
+                                      </div>
+                                  </body>
+                                  </html>
+      </div>
+ </body>     
+</html>

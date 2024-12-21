@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="{% static 'signin.css' %}">
+    <script src="{% static 'signin.js' %}" defer></script>
+</head>
+<body>
+    <nav id="navigation_bar" class="font_family">
+        <img src="{% static 'coding image.png' %}" alt="" id="logo">
+        <a href="{% url 'website:home' %}">Sheryians coding school</a>
+        <a href="{% url 'website:home' %}" id="home_anchor">Home</a>
+        <a href="{% url 'website:courses' %}">Courses</a>
+        <a href="{% url 'website:bootcamp' %}">Bootcamp(Kodr)</a>
+        <button id="callback_button" onclick="display()">Request Callback</button>
+        <button type="button" id="SignIn_button"><a href="#" id="siginbutton_anchor">Sign In</a></button>
+    </nav>
+    <div id="callbackrequest_division">
+        <h3 id="request_heading">Request a callback</h3>
+        <span id="fillform_heading">Fill the form below to request a call from</span><br>
+        <span id="fillform1_heading">our team.</span>
+        <h2 id="name_inputbox_heading">Name</h2>
+        <input type="text" name="Name" id="name_inputbox" placeholder="Name">
+        <h2 id="phone_inputbox_heading">Phone</h2>
+        <input type="number" name="PhoneNumber" id="number_inputbox" placeholder="Phone">
+        <h2 id="dateTime_inputbox_heading">Select Date and Time</h2>
+        <input type="datetime-local" name="DateTime" id="dateTime_inputbox" placeholder="Name">
+        <button type="submit" id="submit_button">Submit</button>
+    </div>
+    <div id="signin_division">
+        <h1 id="signin_heading">Sign In</h1>
+        <button id="phone_button">Phone</button>
+        <button id="email_button">Email</button>
+        <div id="phone_division">
+            <h5 id="phone_number_heading">Mobile Number*</h5>
+            <input type="number" name="Number" id="phone_number_inputbox" placeholder="Enter Your Mobile Number">
+        </div>
+        <div id="email_division"></div>
+    </div>
+    <h4 id="or_heading">Or</h4>
+    <hr id="hline1" class="hlines"><hr id="hline2" class="hlines">
+    <button id="google_button"><img src="{% static 'images/googleicon.png' %}" alt="" id="google_image"><a href="" id="google_anchor">    Continue with Google</a></button>
+    <button id="account_button"><img src="{% static 'images/createNewAccount.png' %}" alt="" id="account_image"><a href="" id="account_anchor">    Create a New Account</a></button>
+</body>
+</html>

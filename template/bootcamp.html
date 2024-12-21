@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootcamp</title>
+    <link rel="stylesheet" href="{% static 'bootcamp.css' %}">
+    <script src="{% static 'bootcamp.js' %}" defer></script>
+</head>
+<body>
+    <nav id="navigation_bar" class="font_family">
+        <img src="{% static 'coding image.png' %}" alt="" id="logo">
+        <a id="coding" href="{% url 'website:home' %}">Sheryians coding school</a>
+        <a class="links" href="{% url 'website:home' %}" id="home_anchor">Home</a>
+        <a class="links" href="{% url 'website:courses' %}">Courses</a>
+        <a class="links" href="#">Bootcamp(Kodr)</a>
+        <button class="links" id="callback_button" onclick="display()">Request Callback</button>
+        <button type="button" id="SignIn_button"><a href="" id="siginbutton_anchor">Sign In</a></button>
+    </nav>
+    <div id="callbackrequest_division">
+        <h3 id="request_heading">Request a callback</h3>
+        <span id="fillform_heading">Fill the form below to request a call from</span><br>
+        <span id="fillform1_heading">our team.</span>
+        <h2 id="name_inputbox_heading">Name</h2>
+        <input type="text" name="Name" id="name_inputbox" placeholder="Name">
+        <h2 id="phone_inputbox_heading">Phone</h2>
+        <input type="number" name="PhoneNumber" id="number_inputbox" placeholder="Phone">
+        <h2 id="dateTime_inputbox_heading">Select Date and Time</h2>
+        <input type="datetime-local" name="DateTime" id="dateTime_inputbox" placeholder="Name">
+        <button type="submit" id="submit_button">Submit</button>
+    </div>
+    <div id="bootcamp_division">
+        <div id="bootcamp_text_division"  class="bootcamp_divisions">
+            <h1 id="bootcamp_heading">6 months In-House</h1>
+            <h1 id="bootcamp_heading">Bootcamp programme</h1>
+            <h1 id="bootcamp_heading">-Kodr.</h1>
+            <span id="startson_span">Starts On: 11 Nov 2024</span>
+            <span id="placement_span">Placement Assistance <img src="{% static 'images/bluetick.png' %}" alt="" id="bluetick_image"></span><br>
+            <h1 id="price_heading">Price <span class="text_highlight">₹ 59000</span><span id="gst_span">[50,000 + 18% Gst]</span></h1>
+            <button id="seatsarefull_button" class="text_highlight"><a href="" id="seatsarefull_anchor">Seats Are Full </a></button>
+        </div>
+        <div id="bootcamp_video_division" class="bootcamp_divisions">
+            <iframe id="yt_video" width="560" height="315" src="https://www.youtube.com/embed/pOGLAlGCKFE?si=8TkXBXMHiAi5CWp1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="consistency_division">
+        <h1 id="believe_heading">we believe in,</h1>
+        <h1 id="consistency_heading"><span id="consistency_span" class="text_highlight">Consistency.</span>No shortcuts.</h1>
+    </div>
+    <div id="subjects_division">
+        <span id="mern_stack_span" class="subjects_spans" >MERN Stack ⚡</span>
+        <span id="datastructures_span" class="subjects_spans">Data Structures & Algorithm 🗿</span><br><br><br>
+        <span id="dbms" class="subjects_spans">DBMS - SQL 🤘</span>
+        <span id="corecs" class="subjects_spans">CORE CS Subjects ⚙</span><br><br><br>
+        <span id="placement_span1" class="subjects_spans">Placement Assistance 💰</span>
+    </div>
+    <div id="main_sticky_division">
+        <div id="request_sticky_division">
+            <button id="courses_button" class="sticky_button"><a href="" id="courses_anchor">Courses</a></button>
+            <button id="request_callback_button" class="sticky_button"><a href="" id="request_callback_anchor">Request Callback</a></button>
+            <button id="buynow_division" class="sticky_button"><a href="" id="buynow_anchor">Buy Now-₹</a></button>
+        </div>
+    </div>
+    <div id="nonstop_division">
+        <h1 id="nonstop_heading">Non-Stop</h1>
+        <h1 id="hours_heaading" class="text_highlight">5 Hours</h1>
+        <h1 id="coding_heading">Coding <span id="everday_span">[Everyday]</span></h1>
+        <h1 id="timing_heading">Monday To Saturday.11:00 AM To 4:00 PM.</h1>
+    </div>
+    <div id="dominate_division">
+        <h1 id="dominate_heading">Dominate.</h1>
+        <h1 id="victory_heading">From Start To Victory.</h1>
+    </div>
+    <div id="portions_division"></div>
+    <hr id="line1" class="lines">
+    <div id="footer_division" class="font_family">
+        <div id="connect_division">
+            <img src="{% static 'coding image.png' %}" alt="" id="logo1">
+            <h4 id="connect_social">Let's connect with our socials</h4><br>
+            <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fsheryians_coding_school%2F&is_from_rle"><img src="{% static 'insta.png' %}" alt="" class="socials"></a>
+            <a href="https://in.linkedin.com/company/the-sheryians-coding-school"><img src="{% static 'linkedin.png' %}" alt="" class="socials"></a>
+            <a href="https://discord.com/invite/D23JkFqrgz"><img src="{% static 'discard.png' %}" alt="" class="socials"></a>
+            <a href="https://www.youtube.com/@thesheryianscodingschool"><img src="{% static 'youtube.png' %}" alt="" class="socials"></a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsheryians_"><img src="{% static 'twitter.png' %}" alt="" class="socials" id="twitter"></a>
+        </div>
+        <div id="company_division">
+            <h3 id="company_heading">COMPANY</h3>
+            <a href="" class="company_anchors" id="about_anchor">About Us</a><br><br>
+            <a href="" class="company_anchors" id="support_anchor">Support</a><br><br>
+            <a href="" class="company_anchors">Privacy Policy</a><br><br>
+            <a href="" class="company_anchors">Terms and Condition</a><br><br>
+            <a href="" class="company_anchors">Pricing and Refund</a><br><br>
+            <a href="" class="company_anchors">Hire From Us</a><br><br>
+            <a href="" class="company_anchors">Bug Bounty</a>
+        </div>
+        <div id="community_division">
+            <h3 id="community_heading">COMMUNITY</h3>
+            <a href="" class="community_anchors">Inertia</a><br><br>
+            <a href="" class="community_anchors">Discord</a>
+        </div>
+        <div id="getintouch_division">
+            <h3 id="getintouch_heading">Get In Touch</h3>
+            <a href="" class="getintouch_anchors">+918109161752,</a><br><br>
+            <a href="" class="getintouch_anchors">+919691778470</a><br><br>
+            <a href="" class="getintouch_anchors">hello@sheryians.com</a><br><br>
+            <a href="" class="getintouch_anchors">
+                23-B, Indrapuri Sector <br>
+                C, Bhopal(MP),462021
+            </a>
+        </div>
+    </div>
+    </div>
+    <hr id="line2" class="lines">
+    <div id="copyrights_division">
+        <h4>Copyright © 2024 Sheryians Pvt. Ltd.</h4>
+        <h4>All Rights Reserved.</h4>
+    </div>
+</body>
+</html>
